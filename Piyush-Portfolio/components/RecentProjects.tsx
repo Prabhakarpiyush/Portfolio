@@ -29,7 +29,7 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div 
-        className={`flex flex-row overflow-x-auto gap-8 p-4 mt-10 w-full max-w-7xl mx-auto custom-scrollbar pb-8 justify-start ${
+        className={`flex flex-col lg:flex-row items-center lg:items-stretch lg:overflow-x-auto gap-8 p-4 mt-10 w-full max-w-7xl mx-auto custom-scrollbar pb-4 lg:pb-8 justify-start ${
           isCentering ? "lg:justify-center" : "lg:justify-start"
         }`}
       >
