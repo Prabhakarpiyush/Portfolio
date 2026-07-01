@@ -42,8 +42,8 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            The best error message is the one that never shows up.
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-xl">
+            Building software that works is good. Building software that lasts is better.
           </p>
 
           {/**
@@ -52,7 +52,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Converting Concepts into Powerful Applications"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 

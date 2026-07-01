@@ -20,7 +20,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Based in Lucknow, U.P., open to remote and on-site opportunities.",
+    title: "",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -95,6 +95,7 @@ export const projects = [
     des: "A real-time chat application featuring 1-to-1 direct messaging, live status tracking, inline edit/delete, and Base64 file sharing over WebSockets with glassmorphic UI.",
     img: "/p-chat.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://p-chat-app-alcp.onrender.com",
   },
   {
     id: 2,
@@ -102,6 +103,7 @@ export const projects = [
     des: "A dynamic news application integrating News API to fetch 1000+ daily articles, with auto-updates every 10 seconds for real-time categorised delivery.",
     img: "/news-app.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://newsapp-h1zj.onrender.com",
   },
   {
     id: 3,
@@ -109,6 +111,7 @@ export const projects = [
     des: "A sports arena booking platform for turf and pickleball court reservations built using React, Node, Express, and MongoDB, optimizing scheduling and user booking flows.",
     img: "/courttitude.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    link: "https://github.com/Prabhakarpiyush/Courttitude",
   },
 ];
 

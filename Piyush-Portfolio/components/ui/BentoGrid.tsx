@@ -11,7 +11,7 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
  import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
-import GridGlobe from "./GridGlobe";
+import { LocationCard } from "./LocationCard";
 
 export const BentoGrid = ({
   className,
@@ -53,8 +53,8 @@ export const BentoGridItem = ({
   spareImg?: string;
   links?: { text: string; url: string }[]; // Links array type definition
 }) => {
-  const leftLists = ["ReactJS", "Express", "NodeJS"];
-  const rightLists = ["FastAPI", "MongoDB", "Python"];
+  const leftLists = ["React.js", "Next.js", "Express", "Node.js"];
+  const rightLists = ["Python", "SQL", "MongoDB", "FastAPI"];
 
   const [copied, setCopied] = useState(false);
 
@@ -134,27 +134,27 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id === 2 && <GridGlobe />}
+          {id === 2 && <LocationCard />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+            <div className="flex gap-1.5 lg:gap-5 w-fit absolute right-3 lg:right-8 top-1/2 -translate-y-1/2">
+              <div className="flex flex-col gap-1.5 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-[10px] sm:text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-2 px-3 rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+              <div className="flex flex-col gap-1.5 md:gap-3 lg:gap-8">
+                <span className="lg:py-4 lg:px-3 py-2 px-3 rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-[10px] sm:text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
